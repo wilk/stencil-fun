@@ -1,6 +1,5 @@
 import {Component, Listen, Prop} from '@stencil/core'
 
-
 @Component({
   tag: 'my-name',
   styleUrl: 'my-name.scss'
@@ -23,7 +22,6 @@ export class MyName {
     return (
       <div>
         Hello, my name is {this.first} {this.last}
-        <solar-planet name="Earth"></solar-planet>
       </div>
     )
   }

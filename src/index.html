@@ -16,7 +16,12 @@
 </head>
 <body>
 
-  <my-name first="Stencil" last="JS"></my-name>
+
+  <stencil-router>
+    <stencil-route url="/" component="my-name" exact={true} />
+    <stencil-route url="/planets/:planet" component="solar-planet" exact={true} />
+  </stencil-router>
+  <!--my-name first="Stencil" last="JS"></my-name-->
 
 </body>
 </html>
