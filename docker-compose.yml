@@ -1,0 +1,13 @@
+version: "2"
+
+services:
+  stencil:
+    command: "npm start"
+    image: stencil-fun:1
+    build:
+      context: .
+    volumes:
+      - ./:/opt/app
+    ports:
+      - "3333:3333"
+      - "35729:35729"
